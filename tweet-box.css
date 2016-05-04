@@ -1,0 +1,163 @@
+body {
+  position:relative;
+  background-color: black;
+}
+
+.tweet-box {
+  position: relative;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  margin: 0 auto;
+  margin-bottom: 10px;
+  background-color: white;
+  overflow: auto;
+  width: 500px;
+  border-style: solid;
+  border-radius: 5px;
+  border-color: grey;
+  border-width: 1px;
+  padding: 20px;
+}
+
+.tweet-container {
+  position: relative;
+  overflow: auto;
+  margin-left: 100px;
+
+}
+
+.profile-image {
+  position: relative;
+  float: left;
+  border-style: solid;
+  border-width: 1px;
+  border-radius: 10px;
+  border-color: grey;
+  height: 70px;
+  width: 70px;
+}
+
+.profile-name {
+  font: bold arial;
+  float: left;
+  font-size: 100%;
+}
+
+.profile-handle {
+  font: bold arial;
+  float: left;
+  font-size: 80%;
+  margin-top: 2px;
+  margin-left: 5px;
+  color: grey;
+}
+.date-time {
+  font: bold arial;
+  float: left;
+  font-size: 80%;
+  margin-top: 2px;
+  margin-left: 5px;
+  color: grey;
+}
+
+.text-box {
+  float: left;
+  clear: left;
+  width: 400px;
+  margin-top: 10px;
+  color: black;
+}
+
+p {
+  margin: 0;
+}
+
+.p-textColor {
+  position: relative;
+  color: white;
+  z-index: 3;
+  text-align: center;
+  font-size: 150%;
+  font-variant: small-caps;
+  font-weight: bold;
+  transition: 0.3s;
+  margin-top: 11%;
+}
+
+.button {
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  margin: auto;
+  border-radius: 50px;
+  border-color: black;
+  width: 200px;
+  height: 75px;
+  border-width: 3px;
+  border-style: dotted;
+  background-color: black;
+}
+
+.button:after {
+  content: '';
+  z-index: 2;
+  height: 100%;
+  width: 0%;
+  top: 0;
+  left: 0;
+  right: 0;
+  transition: 0.7s ease-out;
+}
+
+.button:hover:after {
+  width: 100%;
+}
+
+#button1:hover p {
+  color: blue;
+}
+
+#button2:hover p {
+  color: red;
+}
+
+.b-box {
+  background-color: black;
+  border-style: solid;
+  border-color: grey;
+  height: 80px;
+  width: 534px;
+  padding: 20px;
+  margin: 0 auto;
+  margin-bottom: 35px;
+  overflow: hidden;
+  white-space: nowrap;
+  transition: 0.3s ease-out;
+}
+
+#button1 {
+  display: inline-block;
+  margin-left: 20px;
+  border-color: blue white;
+}
+
+#button2 {
+  display: inline-block;
+  margin-left: 15px;
+  border-color: red white;
+}
+
+#button2.hidden {
+  display: none;
+}
+
+#new-tweet {
+  display: inline-block;
+  height: 50px;
+  width: 300px;
+  margin-top: 13px;
+  font: bold 15px Arial, serif;
+}
